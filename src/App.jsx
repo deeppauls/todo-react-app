@@ -1,6 +1,5 @@
 import AppName from "./components/appName";
 import TodoRow1 from "./components/todo-row1";
-import TodoItem from "./components/todo-item";
 import TodoItems from "./components/todo-items";
 import "./App.css";
 function App() {
