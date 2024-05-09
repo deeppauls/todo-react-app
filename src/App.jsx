@@ -1,17 +1,28 @@
 import AppName from "./components/appName";
 import TodoRow1 from "./components/todo-row1";
-import TodoRow2 from "./components/todo-row2";
-import TodoRow3 from "./components/todo-row3";
+import TodoItem from "./components/todo-item";
+import TodoItems from "./components/todo-items";
 import "./App.css";
 function App() {
+  let todoItems = [
+    {
+      todoName: "Buy Milk",
+      tododate: "4/10/2023",
+    },
+    {
+      todoName: "Go to college",
+      tododate: "4/10/2023",
+    },
+    {
+      todoName: "Learn React",
+      tododate: "4/10/2023",
+    }
+  ];
   return (
     <div className="todo-container">
       <AppName />
       <TodoRow1 />
-      <div className="items-container">
-        <TodoRow2 />
-        <TodoRow3 />
-      </div>
+      <TodoItems todoItems={todoItems}></TodoItems>
     </div>
   );
 }

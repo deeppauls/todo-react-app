@@ -1,9 +1,9 @@
-function TodoRow2() {
+function TodoItem({ todoName },{ tododate }) {
   return (
     <div class="container">
       <div class="row sp-row">
-        <div class="col-6">Buy Milk</div>
-        <div class="col-4">4/10/2023</div>
+        <div class="col-6">{todoName}</div>
+        <div class="col-4">{tododate}</div>
         <div class="col-2">
           <button type="button" class="btn btn-danger sp-button">
             Delete
@@ -14,4 +14,4 @@ function TodoRow2() {
   );
 }
 
-export default TodoRow2;
+export default TodoItem;
