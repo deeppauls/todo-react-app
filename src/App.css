@@ -20,3 +20,8 @@ input {
 .sp-button{
     min-width: 80px;
 }
+
+.initial-text{
+    text-align: center;
+    margin-top: 30px;
+}
